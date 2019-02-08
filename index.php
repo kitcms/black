@@ -11,7 +11,7 @@
 use Classes\Application;
 
 // Определение системных загрузчиков
-$files = glob('*/bootstrap*.php', GLOB_BRACE);
+$files = glob('application/bootstrap*.php', GLOB_BRACE);
 foreach ($files as $file) {
     if (is_file($file)) {
         require_once $file;
